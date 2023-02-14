@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://kit.fontawesome.com/0ca0033246.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{% static 'app1/img/favicon.png' %}">
+        <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    </head>
+    <style>
+        .body{
+            background-color:#f7f7f7;
+        }
+        .header{
+            background-color:#4883B0;
+            height:128px;
+            margin-top:-8px;
+            margin-left:-8px;
+            margin-right:-8px;
+        }
+        .header img{
+            height:60px;
+            margin-left:190px;
+            margin-top:30px;
+        }
+        .ref{
+            background-color:red;
+            margin-left:500px;
+            margin-top:-80px;
+        }
+        .button {
+            background-color: #506690;
+            font-family:Sans-serif;
+            border: none;
+            margin-left:0px;
+            color: white;
+            padding: 10px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 16px;
+          }
+        .button1 {
+            background-color: #00d663;
+            font-family:helvetica;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 8px;
+            cursor: pointer;
+            border-radius: 16px;
+          }
+          .button1 a{
+            text-decoration: none;
+            font-family:helvetica;
+            color: white;
+          }
+          .button2{
+            background-color: #48B4BB;
+            font-family:helvetica;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:190px;
+            margin-top:-50px;
+            cursor: pointer;
+            border-radius: 16px;
+          }
+          {% comment %} Media Query {% endcomment %}
+          @media(max-width:480px){
+            .header{
+                display:none;
+          }
+          .header img{
+            display:none;
+        }
+        .ref{
+            display:none;
+        }
+        .button {
+            display:none;
+          }
+        .button1 {
+            display:none;
+          }
+          .button1 a{
+            display:none;
+          }
+          .button2{
+            display:none;
+          }
+       
+            
+    </style>
+    <body>
+        <div class="header">
+            <img src= {% static 'app1/img/logo-white.png' %}>
+        </div>
+            <div class="ref">
+                    <a class='button' href="{% url 'app1:indexurls' %}"><b>Home</b></a>
+                    <a class='button' href="#services"><b>Services</b></a>
+                    <a class='button' href="#Hospitals"><b>Hospitals</b></a>
+                    <a class='button' href="#faq-container"><b>FAQ</b></a>
+                    <a class='button' href="{% url 'app1:abouturls' %}"><b>About us</b></a>
+                    <a class='button1' href="{% url 'app1:callbackurls' %}"><b>About us</b></a>
+            </div>
+        </div>
+        {% block body %}
+        {% block content %}
+        {% endblock content %}
+        {% endblock body %}
+</html>
+
+
+{% comment %} 
+}
+  .header{
+    background-color:#4883B0;
+    height:88px;
+    width:412px;
+    margin-top:-8px;
+    margin-left:-8px;
+    margin-right:-8px;}
+  .header img{
+    height:55px;
+    margin-left:15px;
+    margin-top:20px;
+  }
+  .header a{
+    color: #f7f7f7;
+    font-size: 25px;
+    margin-left: 160px;
+    margin-top:-50px;
+  }
+.button2{
+  background-color: #48B4BB;
+  font-family:helvetica;
+  border: none;
+  padding: 10px 18px;
+  text-align: center;
+  display: inline-block;
+  margin-left:15px;
+  margin-top:20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.topnav{
+  background-color:#4883B0;
+  margin-left:-10px;
+  margin-top:0px;
+  width: 414px;
+
+}
+.button {
+  background-color: #4883B0;
+  font-family:Sans-serif;
+  border: none;
+  color: white;
+  padding: 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button1 {
+  background-color: #00d663;
+  font-family:helvetica;
+  border: none;
+  color: white;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button2 a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+  #intro{
+    position: sticky;
+    background-color:#4883B0;
+    margin-top:-50px;
+    margin-left:-10px;
+    width:414px;
+    height:500px;
+    border-bottom-left-radius: 20% 40%;
+    border-bottom-right-radius: 60% 20%;
+  }
+  #intro h3{
+    font-family:helvetica;
+    font-size:25px;
+    color:white;
+    margin-left:15px;
+    margin-top:50px;
+    position: relative;
+    animation: intro 1s ;
+  }
+  @keyframes intro{
+    0% {font-size: 0px;}
+    100%{font-size: 25px;}
+
+  }
+  #intro p{
+    color:white;
+    font-family:helvetica;
+    margin-left:15px;
+    font-size:13px;
+  }
+  #intro img{
+    height:300px;
+    margin-left:50px;
+    margin-top:40px;
+    animation: introimg 1s ;
+    position: relative;
+  }
+  #services{
+    height:100px;
+    margin-top: 100px;
+    animation: services 5s;
+  }
+  @keyframes services {
+    0%{opacity: 0;}
+    100%{opacity: 100;}
+  }
+  #services p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left:15px;
+    font-size:15px;
+
+  }
+  #services h1{
+    font-family:helvetica;
+    margin-left:15px;
+    font-size:25px;
+  }
+  .services-info{
+    background-color:white;
+    height:1800px;
+    margin-top:-70px;
+    animation: servicesinfo 5s;
+  }
+  @keyframes servicesinfo {
+    0%{top: 100px;}
+    100%{top: 0px;}
+  }
+  @keyframes servicesinfo {
+    0%{top: 100px;}
+    100%{top: 0px;}
+  }
+  .info1{
+    font-family:helvetica;
+    font-size:18px;
+    margin-left:80px;
+    margin-top:100px;
+    height:380px;
+    width:320px;
+    background-color:white;
+  }
+  .info1 p{
+    font-family:helvetica;
+    font-size:17px;
+    margin-left:-45px;
+    color:grey;
+  }
+  .info1 img{
+    height:70px;
+    margin-left:90px;
+  }
+  .info2{
+    font-family:helvetica;
+    font-size:18px;
+    margin-left:80px;
+    margin-top:-100px;
+    height:380px;
+    width:320px;
+    background-color:white;
+  }
+  .info2 img{
+    height:70px;
+    margin-left:90px;
+  }
+  .info2 p{
+    font-family:helvetica;
+    font-size:17px;
+    margin-left:-45px;
+    color:grey;
+  }
+  .info3{
+    font-family:helvetica;
+    font-size:18px;
+    margin-left:80px;
+    margin-top:-100px;
+    height:380px;
+    width:320px;
+    background-color:white;
+  }
+  .info3 img{
+    height:70px;
+    margin-left:90px;
+  }
+  .info3 p{
+    font-family:helvetica;
+    font-size:17px;
+    margin-left:-45px;
+    color:grey;
+  }
+  .info4{
+    font-family:helvetica;
+    font-size:18px;
+    margin-left:80px;
+    margin-top:-100px;
+    height:380px;
+    width:320px;
+    background-color:white;
+  }
+  .info4 img{
+    height:70px;
+    margin-left:90px;
+  }
+  .info4 p{
+    font-family:helvetica;
+    font-size:17px;
+    margin-left:-45px;
+    color:grey;
+  }
+  .info5{
+    font-family:helvetica;
+    font-size:18px;
+    margin-left:80px;
+    margin-top:-100px;
+    height:380px;
+    width:320px;
+    background-color:white;
+  }
+  .info5 img{
+    height:70px;
+    margin-left:90px;
+  }
+  .info5 p{
+    font-family:helvetica;
+    font-size:17px;
+    margin-left:-45px;
+    color:grey;
+  }
+  .info6{
+    font-family:helvetica;
+    font-size:18px;
+    margin-left:80px;
+    margin-top:-100px;
+    height:380px;
+    width:320px;
+    background-color:white;
+  }
+  .info6 img{
+    height:70px;
+    margin-left:90px;
+  }
+  .info6 p{
+    font-family:helvetica;
+    font-size:17px;
+    margin-left:-45px;
+    color:grey;
+  }
+  .services-2{
+    height:500px;
+    margin-top: -100px;
+  }
+  .services-2 p {
+    font-family:helvetica;
+    margin-left:15px;
+    font-size:15px;
+  }
+  .services-2 h1 {
+    font-family:helvetica;
+    margin-left:15px;
+    font-size:25px;
+  }
+  .services-2 h7   {
+    font-family:helvetica;
+    margin-left:15px;
+    font-size:14px;
+    color:#4482C1;
+  }
+  .services-2 img{
+    height:300px;
+    margin-left:15px;
+    margin-top:200px;
+  }
+  .services-tick{
+    height:500px;
+    background-color:white;
+    margin-top:-380px;
+  }
+  .services-tick p {
+    margin-left:13px;
+    color:grey;
+
+  }
+  .services-tick i{
+    color:#48B4BB;
+  }
+
+/* ----------------------------------------------------------------------------------------- */
+#Hospitals{
+  width:412px;
+  height:500px;
+  margin-top:-250px;
+}
+#Hospitals p{
+  font-family:helvetica;
+  margin-left:15px;
+  margin-top:250px;
+  font-size:15px;
+}
+#Hospitals h1{
+  font-family:helvetica;
+  margin-left:15px;
+  font-size:25px;
+}
+.Hospitals-pic{
+  margin-top:-350px;
+  background-color:white;
+
+}
+.Hospitals-pic img{
+  height:60px;
+  margin-top:-900px;
+  border-radius: 25px;
+}
+.Hospitals-info{
+  height:800px;
+  width: 400px;
+  margin-left:15px;
+}
+.hospital-info1{
+  /* width:100px; */
+  margin-left:0px;
+  margin-top:-300px;
+  background-color:white;
+}
+.hospital-info1 img{
+  margin-left:130px;
+  margin-top:10px;
+  height: 60px;
+}
+.hospital-info1 p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left:100px;
+  width:200px;
+  margin-top:20px;
+  font-size:25px;
+}
+.hospital-info2{
+  /* width:100px; */
+  margin-left:0px;
+  margin-top:0px;
+  background-color:white;
+}
+.hospital-info2 img{
+  margin-left:130px;
+  margin-top:10px;
+    height: 60px;
+}
+.hospital-info2 p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left:100px;
+  width:200px;
+  margin-top:20px;
+  font-size:25px;
+}
+.hospital-info3{
+   width:300px;
+  margin-left:0px;
+  margin-top:30px;
+  background-color:white;
+}
+.hospital-info3 img{
+  margin-left:130px;
+  margin-top:10px;
+    height: 60px;
+}
+.hospital-info3 p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left:100px;
+  width:200px;
+  margin-top:20px;
+  font-size:25px;
+}
+.hospital-info4{
+  /* width:100px; */
+  margin-left:0px;
+  margin-top:30px;
+  background-color:white;
+}
+.hospital-info4 img{
+  margin-left:130px;
+  margin-top:10px;
+    height: 60px;
+}
+.hospital-info4 p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left:100px;
+  width:200px;
+  margin-top:20px;
+  font-size:25px;
+}
+.partners{
+  height:400px;
+  background-color:white;
+  margin-top:-100px;
+}
+.partners p{
+  font-family:helvetica;
+  margin-left:15px;
+  font-size:15px;
+}
+.partners h1{
+  font-family:helvetica;
+  margin-left:15px;
+  font-size:25px;
+}
+.partners img{
+  height:130px;
+  margin-left:120px;
+  transition-property: width height;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.partners img:hover{
+  height:180px;
+  width:200px;
+}
+.FAQ{
+  width:412px;
+  height:500px;
+  background-color:white;
+  margin-top:-100px;
+}
+.FAQ p{
+  font-family:helvetica;
+  margin-left:15px;
+  font-size:15px;
+}
+.FAQ h1{
+  font-family:helvetica;
+  margin-left:15px;
+  font-size:22px;
+}
+.faq-heading{
+font-family:helvetica;
+margin-top:-60px;
+border-bottom: #777;
+padding: 20px 60px;
+height:40px;
+width:100px;
+}
+#faq-container{
+margin-top:-400px;
+margin-left:-130px;
+width:650px;;
+display: flex;
+justify-content: center;
+flex-direction: column;
+font-family:helvetica;
+}
+#faq-container h1{
+  font-size: 15px;
+}
+.hr-line{
+width: 60%;
+margin: auto;
+}
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+  }
+  .faq-body{
+  margin: auto;
+  /* text-align: center; */
+  width: 50%; 
+  padding: auto;
+  
+  }
+  .faq-body p{
+  font-size: 15px;
+  font-family:helvetica;
+  color:grey;
+  margin-left:-10px;
+  }
+  .faq-page{
+  font-family:helvetica;
+  color:#4883B0;
+  font-size:20px;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .faq-page:hover {
+  background-color: #F9F9F9;
+  }
+  /* Style the faq-page panel. Note: hidden by default */
+  .faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  }
+  .faq-page:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  }
+  .active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+  }
+  .footer{
+    height:250px;
+    width: 417px;
+    margin-right: -100px;
+    background-color:#4883B0;
+    }
+    .namemail{
+      background-color: #4883B0;
+      font-size: 11px;
+      height: 50px;
+      width: 200px;
+      margin-left: 5px;
+      margin-top: -0px;
+    }
+    .namemail a{
+      text-decoration: none;
+      font-size: 11px;
+      color: #f7f7f7;
+      margin-left: 40px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .namemail a:hover{
+      color: black;
+    }
+    .social{
+      background-color: #4883B0;
+      height: 50px;
+      width: 100px;
+      margin-left: 5px;
+      margin-right: 1000px;
+      margin-top: -20px;
+      
+    }
+    .social h1{
+      font-size: 10px;
+      color: #f7f7f7;
+      margin-left: 40px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .fonts{
+      background-color: #4883B0;
+      height: 100px;
+      width: 250px;
+      margin:10px;
+      margin-top: -10px;
+    } 
+    .fonts a{
+      color: #f7f7f7;
+      font-size: 20px;
+      margin: 10px;
+    }
+    .fonts a:hover{
+      color: black;
+    }
+    .links{
+      background-color: #4883B0;
+      height: 100px;
+      width: 40px;
+      margin-left:200px;
+      margin-top: -120px;
+    }
+    .links a{
+      color: #f7f7f7;
+      font-size: 11px;
+      text-decoration: none;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    .links a:hover{
+      color: black;
+    }
+    .links2{
+      background-color: #4883B0;
+      height: 100px;
+      width: 40px;
+      margin-left:300px;
+      margin-top: -100px;    
+    }
+    .links2 a{
+        color: #f7f7f7;
+        font-size: 11px;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+    }
+    .links2 a:hover{
+      color: black;
+    }
+    .disclaimer{
+      background-color: #87CEEB;
+      height: 70px;
+    }
+    .copyright{
+      background-color: #87CEEB;
+      width: 400px;
+      margin-left:15px;
+      margin-top:-15px;
+    }
+    .copyright p{
+      color: black;
+      margin-left: 15px;
+        font-size: 10px;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .policy{
+      background-color: #87CEEB;
+      width: 400px;
+      height: 0;
+      margin-left:10px;
+      margin-top:-30px;
+    }
+    .policy a{
+      color: black;
+      margin-left: 15px;
+        font-size: 10px;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+    }    
+
+{% endcomment %}

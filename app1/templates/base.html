@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://kit.fontawesome.com/0ca0033246.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{% static 'app1/img/favicon.png' %}">
+        <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    </head>
+    <style>
+        .body{
+            background-color:#f7f7f7;
+        }
+        .header{
+            background-color:#4883B0;
+            height:128px;
+            margin-top:-8px;
+            margin-left:-8px;
+            margin-right:-8px;
+        }
+        .header img{
+            height:60px;
+            margin-left:190px;
+            margin-top:30px;
+        }
+        .ref{
+            background-color:#4883B0;
+            margin-left:800px;
+            margin-top:-50px;
+        }
+        .button {
+            background-color: #506690;
+            font-family:Sans-serif;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 16px;
+          }
+        .button1 {
+            background-color: #00d663;
+            font-family:helvetica;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 8px;
+            cursor: pointer;
+            border-radius: 16px;
+          }
+          .button1 a{
+            text-decoration: none;
+            font-family:helvetica;
+            color: white;
+          }
+          .button2{
+            background-color: #48B4BB;
+            font-family:helvetica;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:190px;
+            margin-top:-50px;
+            cursor: pointer;
+            border-radius: 16px;
+          }
+          {% comment %} Media Query {% endcomment %}
+          @media(max-width:480px){
+            .header{
+              background-color:#4883B0;
+              height:70px;
+              margin-top:-8px;
+              margin-left:-8px;
+              margin-right:-8px;
+          }
+          .header img{
+            height:40px;
+            margin-left:15px;
+            margin-top:15px;
+          }
+          .ref{
+            background-color:#4883B0;
+            margin-left:800px;
+            margin-top:-50px;
+        }
+        .button {
+          background-color: #506690;
+          font-family:Sans-serif;
+          border: none;
+          color: white;
+          padding: 0px 0px;
+          cursor: pointer;
+        }
+        .button a{
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          }
+
+    </style>
+    <body>
+        <div class="header">
+            <img src= {% static 'app1/img/logo-white.png' %}>
+            <div class="ref">
+                    <a class='button' href="{% url 'app1:indexurls' %}"><b>Home</b></a>
+                    <a class='button' href="#services"><b>Services</b></a>
+                    <a class='button' href="#Hospitals"><b>Hospitals</b></a>
+                    <a class='button' href="#faq-container"><b>FAQ</b></a>
+                    <a class='button' href="{% url 'app1:abouturls' %}"><b>About us</b></a>
+            <div class="button1">
+                <a href="{% url 'app1:callbackurls' %}"><b>Talk to us</b></a>
+            </div> 
+        </div>
+        {% block body %}
+        {% block content %}
+        {% endblock content %}
+        {% endblock body %}
+</html>
+
+{% comment %} <button class="button" onclick="location.href='###  "><b>Home</button>
+    <button class="button" onclick="location.href='###"><b>Services</button>
+    <button class="button" onclick="location.href='###"><b>Hospitals</button>
+    <button class="button" onclick="location.href='###"><b>FAQ</button>
+    <button class="button" onclick="location.href='###"><b>About us</button>
+     {% endcomment %}

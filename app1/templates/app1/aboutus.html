@@ -1,0 +1,114 @@
+{% load static %}
+<title>About us </title>
+{% block body %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'app1/css/about.css' %}">
+<link rel="shortcut icon" href="{% static 'app1/img/favicon.png' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://kit.fontawesome.com/0ca0033246.js" crossorigin="anonymous"></script>
+
+<div class="header">
+    <img src= {% static 'app1/img/logo-white.png' %}>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+</div>
+    <div class="topnav" id="myTopnav">
+            <a class='button' href="{% url 'app1:indexurls' %}"><b>Home</b></a>
+            <a class='button' href="/#services"><b>Services</b></a>
+            <a class='button' href="/#Hospitals"><b>Hospitals</b></a>
+            <a class='button' href="{% url 'app1:abouturls' %}"><b>About us</b></a>
+            <a class='button1'  href="{% url 'app1:callbackurls' %}"><b>Get A Call Back</b></a>
+    </div>
+</div>
+
+<div class="about">
+<img src= {% static 'app1/img/about.png' %}>
+</div>
+<div class="about_info">
+    <h2>Our Mission</h2>
+    <p>With an aim to create a network of top-notch hospitals<br>
+        called Medictrl is committed to offering topnotch medical<br>
+        treatment to everyone.<br><br>
+        With the help of Medictrl's innovative solutions, hospitals<br>
+        can treat patients more affordably, provide them a better<br>
+        overall experience, and uphold high standards for medical<br>
+        quality with the goal of building a hospital network that<br>
+        patients can rely on for excellent results, price<br>
+        transparency, and a top-notch experience.
+    </p>
+</div>
+<div class="team">
+    <h2>Our Team</h2>
+    <p>The ones working day night to give you the platform for all your<br>healthcare needs.</p>
+</div>
+<div class="teaminfo1">
+    <img src= {% static 'app1/img/varun.jpg' %}>
+    <h5>Varun Kumar Singh <a href="https://www.linkedin.com/in/varun-singh-vs0920/"><i class="fa-brands fa-linkedin"></i></a></h5>
+
+    <p><b>Chief Executive Officer</b></p>
+    <div class="ex">
+        <p>11+ years of experience in healthcare. Track record of business development, strategic, relationship management, network management, new city launching, & ancillary revenue stream, key accounts management, Innovation, Startups(Healthcare).</p>
+    </div>
+</div>
+<div class="teaminfo2">
+    <img src= {% static 'app1/img/ratul.jpg' %}>
+    <h5>Ratul Majmudar <a href="https://www.linkedin.com/in/ratul-majumdar-69b46038/"><i class="fa-brands fa-linkedin"></i></a></h5>
+    <p><b>Chief Operating Officer</b></p>
+    <div class="ex2">
+        <p>17+ years of experience in healthcare. Rich expertise in Overall Hospital Business Development and Management and Strategic Medical Recruitment.</p>
+    </div>
+</div>
+<div class="teaminfo3">
+    <img src= {% static 'app1/img/shoumya.jpg' %}>
+    <h5>CA Shoumya Hor <a href="https://www.linkedin.com/in/ca-shoumya-hor-8033a55/"><i class="fa-brands fa-linkedin"></i></a></h5>
+    <p><b>Chief Financial Officer</b></p>
+    <div class="ex3">
+        <p>Chartered Accountant having 25 + years of experience Worked as CFO s in major Indian Companies Mahindra Group Company and MNCs such as Husco Hydraulics a subsidiary of US MNC, and Hyundai Construction Equipment</p>
+    </div>
+</div>
+<div class="teaminfo4">
+    <img src= {% static 'app1/img/cto.png' %}>
+    <h5>Dummy <a href="###"><i class="fa-brands fa-linkedin"></i></a></h5>
+    <p><b>Chief Technical Officer</b></p>
+    <div class="ex3">
+        <p>An IIT alumnus and startup enthusiastic who has served in 3 startups as a founding team member. Naresh is a software engineer who have worked for more than 7 years before joining us</p>
+    </div>
+</div>
+<div class="teaminfo5">
+    <img src= {% static 'app1/img/rankit.jpg' %}>
+    <h5>Rankit Singh <a href="https://www.linkedin.com/in/rankit-singh/"><i class="fa-brands fa-linkedin"></i></a></h5>
+    <p><b>Founding Team</b></p>
+    <div class="ex3">
+        <p>Passionate about entrepreneurship & startup culture. Worked and curated data in healthcare business startup.Experienced in building startups from ideation.</p>
+    </div>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+{% endblock content %}
+{% endblock body %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

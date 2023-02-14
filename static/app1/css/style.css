@@ -1,0 +1,462 @@
+.body{
+    background-color:#f7f7f7;
+}
+.ref{
+    background-color:#4883B0;
+    margin-left:800px;
+    margin-top:-50px;
+}
+.button {
+    background-color: #506690;
+    font-family:Sans-serif;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+.button1 {
+    background-color: #00d663;
+    font-family:helvetica;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 8px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  .button2{
+    background-color: #48B4BB;
+    font-family:helvetica;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left:190px;
+    margin-top:-50px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  .intro{
+    background-color:#4883B0;
+    height:500px;
+    border-bottom-left-radius: 20% 40%;
+    border-bottom-right-radius: 60% 20%;
+  }
+  .intro h3{
+    font-family:helvetica;
+    font-size:35px;
+    color:white;
+    margin-left:190px;
+    margin-top:40px;
+  }
+  .intro p{
+    color:white;
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:17px;
+  }
+  .intro img{
+    height:400px;
+    margin-left:900px;
+    margin-top:-200px;
+  }
+  .services{
+    height:100px;
+  }
+  .services h4{
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:20px;
+
+  }
+  .services h1{
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:40px;
+  }
+  .services-info{
+    background-color:white;
+    height:900px;
+    margin-top:-70px;
+  }
+  .info1{
+    font-family:helvetica;
+    font-size:20px;
+    margin-left:190px;
+    margin-top:100px;
+    height:380px;
+    width:320px;
+    background-color:white;
+    box-shadow: 5px 11px 19px #888888;
+  }
+  .info1 p{
+    font-family:helvetica;
+    font-size:17px;
+    color:grey;
+  }
+  .info2 p{
+    font-family:helvetica;
+    font-size:17px;
+    color:grey;
+  }
+  .info3 p{
+    font-family:helvetica;
+    font-size:17px;
+    color:grey;
+  }
+  .info4 p{
+    font-family:helvetica;
+    font-size:17px;
+    color:grey;
+  }
+  .info5 p{
+    font-family:helvetica;
+    font-size:17px;
+    color:grey;
+  }
+  .info6 p{
+    font-family:helvetica;
+    font-size:17px;
+    color:grey;
+  }
+  .info1 img{
+    height:100px;
+    margin-left:0px;
+  }
+  .info2{
+    font-family:helvetica;
+    font-size:20px;
+    margin-left:530px;
+    margin-top:-380px;
+    height:380px;
+    width:320px;
+    background-color:white;
+    box-shadow: 5px 11px 19px #888888;
+  }
+  .info2 img{
+    height:100px;
+    margin-left:0px;
+  }
+  .info3{
+    font-family:helvetica;
+    font-size:20px;
+    margin-left:870px;
+    margin-top:-380px;
+    height:380px;
+    width:320px;
+    background-color:white;
+    box-shadow: 5px 11px 19px #888888;
+  }
+  .info3 img{
+    height:100px;
+    margin-left:0px;
+  }
+  .info4{
+    font-family:helvetica;
+    font-size:20px;
+    margin-left:190px;
+    margin-top:20px;
+    height:380px;
+    width:320px;
+    background-color:white;
+    box-shadow: 5px 11px 19px #888888;
+  }
+  .info4 img{
+    height:100px;
+    margin-left:0px;
+  }
+  .info5{
+    font-family:helvetica;
+    font-size:20px;
+    margin-left:530px;
+    margin-top:-380px;
+    height:380px;
+    width:320px;
+    background-color:white;
+    box-shadow: 5px 11px 19px #888888;
+  }
+  .info5 img{
+    height:100px;
+    margin-left:0px;
+  }
+  .info6{
+    font-family:helvetica;
+    font-size:20px;
+    margin-left:870px;
+    margin-top:-380px;
+    height:380px;
+    width:320px;
+    background-color:white;
+    box-shadow: 5px 11px 19px #888888;
+  }
+  .info6 img{
+    height:100px;
+    margin-left:0px;
+  }
+  .services-2{
+    height:500px;
+  }
+  .services-2 h4 {
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:20px;
+  }
+  .services-2 h1 {
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:40px;
+  }
+  .services-2 p {
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:17px;
+    color:#4482C1;
+  }
+  .services-2 img{
+    height:400px;
+    margin-left:1000px;
+    margin-top:-250px;
+  }
+  .services-tick{
+    height:500px;
+    background-color:white;
+    margin-top:-320px;
+  }
+  .services-tick p {
+    margin-left:150px;
+    color:grey;
+
+  }
+  .services-tick i{
+    color:#48B4BB;
+  }
+  .Hospitals{
+    height:100px;
+    margin-top:-250px;
+  }
+  .Hospitals h4{
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:20px;
+  }
+  .Hospitals h1{
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:40px;
+  }
+  .Hospitals-pic{
+    height:320px;
+    margin-left:0px;
+    background-color:white;
+
+  }
+  .Hospitals-pic img{
+    height:270px;
+    margin-left:10px;
+    border-radius: 25px;
+  }
+  .Hospitals-info{
+    height:300px;
+    background-color:white;
+    margin-left:100px;
+  }
+  .hospital-info1{
+    height:150px;
+    width:100px;
+    margin-left:450px;
+    background-color:white;
+  }
+  .hospital-info1 img{
+    margin-left:0px;
+  }
+  .hospital-info1 h3{
+    font-family:helvetica;
+    margin-left:15px;
+    font-size:20px;
+  }
+  .hospital-info2{
+    height:150px;
+    width:100px;
+    margin-left:600px;
+    margin-top:-150px;
+    background-color:white;
+  }
+  .hospital-info2 img{
+    margin-left:0px;
+  }
+  .hospital-info2 h3{
+    font-family:helvetica;
+    margin-left:15px;
+    font-size:20px;
+  }
+  .hospital-info3{
+    height:150px;
+    width:100px;
+    margin-left:750px;
+    margin-top:-150px;
+    background-color:white;
+  }
+  .hospital-info3 img{
+    margin-left:0px;
+  }
+  .hospital-info3 h3{
+    font-family:helvetica;
+    margin-left:15px;
+    font-size:20px;
+  }
+  .partners{
+    height:400px;
+    background-color:white;
+    margin-top:-100px;
+  }
+  .partners h3{
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:20px;
+  }
+  .partners h1{
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:40px;
+  }
+  .partners img{
+    height:130px;
+    margin-left:700px;
+  }
+  .FAQ{
+    height:500px;
+    background-color:white;
+    margin-top:-100px;
+  }
+  .FAQ h3{
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:20px;
+  }
+  .FAQ h1{
+    font-family:helvetica;
+    margin-left:190px;
+    font-size:40px;
+  }
+.faq-heading{
+font-family:helvetica;
+margin-top:-25px;
+border-bottom: #777;
+padding: 20px 60px;
+height:100px;
+}
+.faq-container{
+margin-top:-300px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+font-family:helvetica;
+}
+.hr-line{
+width: 60%;
+margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+/* background-color: #eee; */
+color: #444;
+cursor: pointer;
+padding: 30px 20px;
+width: 60%;
+border: none;
+outline: none;
+transition: 0.4s;
+margin: auto;
+}
+.faq-body{
+margin: auto;
+/* text-align: center; */
+width: 50%; 
+padding: auto;
+
+}
+.faq-body p{
+font-family:helvetica;
+color:grey;
+margin-left:-10px;
+}
+.faq-page{
+font-family:helvetica;
+color:#4883B0;
+font-size:20px;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+padding: 0 18px;
+background-color: white;
+display: none;
+overflow: hidden;
+}
+.faq-page:after {
+content: '\02795';
+/* Unicode character for "plus" sign (+) */
+font-size: 13px;
+color: #777;
+float: right;
+margin-left: 5px;
+}
+.active:after {
+content: "\2796";
+/* Unicode character for "minus" sign (-) */
+}
+.footer{
+height:400px;
+background-color:#4883B0;
+}
+.footer p{
+color:white;
+margin-left:190px;
+margin:190px;
+font-family:helvetica;
+}
+.footer p a{
+color:white;
+}
+.socialshare h1{
+font-family:helvetica;
+margin-left:190px;
+margin-top:-140px;
+font-size:30px;
+color:white;
+}
+.socialshare a{
+color:white;
+margin-left:190px;
+font-size:40px;
+}
+.socialshare p{
+color:#e5e5e5;
+
+}
+.links{
+height:100px;
+width:50px;
+margin-left:900px;
+margin-top:-90px;
+}
+.links a{
+color:white;
+text-decoration:None;
+font-size:20px;
+margin:40px;
+font-family:helvetica;
+}

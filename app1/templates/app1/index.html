@@ -1,0 +1,261 @@
+{% load static %}
+<title>Home | MediCtrl</title>
+{% block body %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+<link rel="shortcut icon" href="{% static 'app1/img/favicon.png' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://kit.fontawesome.com/0ca0033246.js" crossorigin="anonymous"></script>
+
+<body>
+  <div class="header">
+    <img src= {% static 'app1/img/logo-white.png' %}>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+</div>
+    <div class="topnav" id="myTopnav">
+            <a class='button' href="{% url 'app1:indexurls' %}"><b>Home</b></a>
+            <a class='button' href="#services"><b>Services</b></a>
+            <a class='button' href="#Hospitals"><b>Hospitals</b></a>
+            <a class='button' href="{% url 'app1:abouturls' %}"><b>About us</b></a>
+            <a class='button1'  href="{% url 'app1:callbackurls' %}"><b>Get A Call Back</b></a>
+    </div>
+</div>
+
+  <section id="intro">
+  {% comment %} <div class="intro"> {% endcomment %}
+      <h3>Feel control of your <br>medical journey with <br>MediCtrl</h3>
+      <p>The top doctors, technology and treatment are accessible in your town.<br>
+          Schedule a free appointment with one of our expert doctors near you.</p>
+            <div class="button2">
+              <a href="{% url 'app1:callbackurls' %}"><b>Talk to us</b></a>
+          </div> 
+      <img src= {% static 'app1/img/home.png' %}>
+  {% comment %} </div>         {% endcomment %}
+        </section>
+  {% comment %} <div class="services"> {% endcomment %}
+    <section id="services">
+    <p>What services does</p>
+    <h1>Medictrl Provide?</h1>
+    </section>
+  <div class="services-info">
+    <div class="info1">
+      <img src= {% static 'app1/img/doctors.png' %} >
+      <h4>Best doctors and technology</h4>
+      <p>Our team of medical professionals ensure that you and your loved ones receive the best medical treatment possible.</p>
+    </div>
+    <div class="info2">
+      <img src= {% static 'app1/img/fixed.png' %} >
+      <h4>100% fixed price packages and billing transparency</h4>
+      <p>We believe in total openness and zero hidden fees so you may concentrate on your healthcare.</p>
+    </div>
+    <div class="info3">
+      <img src= {% static 'app1/img/pre.png' %} >
+      <h4>Pre and post-hospitalization assistance</h4>
+      <p>Consultations and instructions including dietary tips as well as exercises to every patients.</p>
+    </div>
+    <div class="info4">
+      <img src= {% static 'app1/img/insurance.png' %} >
+      <h4>Insurance support and medical financing</h4>
+      <p>Hospitals with medi-loans facilities and insurance tie-ups to ensure hassle free insurance claims.</p>
+    </div>
+    <div class="info5">
+      <img src= {% static 'app1/img/call.png' %} >
+      <h4>Escort for need fulls</h4>
+      <p>Caretaker for the elderly & needfulls, as well as pick-up and drop-off aid.</p>
+    </div>
+    <div class="info6">
+      <img src= {% static 'app1/img/slot.png' %} >
+      <h4>User-friendly tech for slot booking and other services</h4>
+      <p>For the patient's convenience, live tracking and slot booking for OPD are available.</p>
+    </div>
+  </div>
+  <div class="services-2">
+    <p>How it works?</p>
+    <h1><b>Discover MediCtrl Benifits!</b></h1>
+    <p>With just few clicks</p>
+    <h7><b>All your healthcare need,
+      one stop MediCtrl</b></h7>
+    <img src= {% static 'app1/img/idea.png' %} >
+  </div><br>
+  <div class="services-tick">
+    <p><i class="fa-regular fa-circle-check"></i>&nbsp&nbsp&nbsp Book your appointment through MediCtrl website</p>
+    <p><i class="fa-regular fa-circle-check"></i>&nbsp&nbsp&nbsp After confirmation via call, visit MediCtrl hospital</p>
+    <p><i class="fa-regular fa-circle-check"></i>&nbsp&nbsp&nbsp Get your prescription on the app</p>
+    <p><i class="fa-regular fa-circle-check"></i>&nbsp&nbsp&nbsp Select your diagnosis and order medicines through the app</p>
+    <p><i class="fa-regular fa-circle-check"></i>&nbsp&nbsp&nbsp Earn rewards on the services you avail</p>
+  </div>
+  {% comment %} <div class="Hospitals"> {% endcomment %}
+    <section id="Hospitals">
+    <p>Who are our partner health providers</p>
+    <h1><b>MediCtrl Hospitals</b></h1>
+    </section>
+  <div class="Hospitals-pic">
+    <img src= {% static 'app1/img/apple.jpeg' %} >
+    <img src= {% static 'app1/img/apple.jpeg' %} >
+    <img src= {% static 'app1/img/apple.jpeg' %} >
+    <img src= {% static 'app1/img/apple.jpeg' %} >
+  </div>
+  <div class="Hospitals-info">
+    <div class="hospital-info1">
+      <img src= {% static 'app1/img/Locations.png' %} >
+      <p><b>1</b> City Present</p>
+    </div>
+    <div class="hospital-info2">
+      <img src= {% static 'app1/img/plus.png' %} >
+      <p><b>1</b> Hospital Onboard</p>
+    </div>
+    <div class="hospital-info3">
+      <img src= {% static 'app1/img/beds.png' %} >
+      <p><b>25</b> Beds strength</p>
+    </div>
+    <div class="hospital-info4">
+      <img src= {% static 'app1/img/Patients.png' %} >
+      <p><b>0</b> Patients Served</p>
+    </div>
+  </div>
+  <div class="partners">
+    <p>We are backed by strong firms</p>
+    <h1><b>Our Partners</b></h1>
+    <img src= {% static 'app1/img/incubator.png' %} >
+    <img src= {% static 'app1/img/startup.png' %} >
+  </div>
+  <div class="FAQ">
+    <p>Everything you need to know</p>
+    <h1><b>Frequently Asked Questions</b></h1>
+  </div>
+  {% comment %} FAQ {% endcomment %}
+  <main>
+    <section id="faq-container">
+        <div class="faq-one">
+            <!-- faq question -->
+            <h1 class="faq-page">How does MediCtrl ensure good medical quality?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>All MediCtrl hospitals are accredited by National Accreditation Board for Hospitals & Healthcare Providers
+                   (NABH), dictated on ground MediCtrl works on healthcare parameters & patient experience ..</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-two">
+            <!-- faq question -->
+            <h1 class="faq-page">What does fixed price package include?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>The fixed price package typically covers all costs associated with the surgery. This typically includes: i) 
+                  Hospital admission charges. ii) Surgery charges including surgeon fees, anesthetist fees and OT charges. iii)
+                   Hospital stays. iv) Cost of drugs consumed during stay at hospital</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-three">
+            <!-- faq question -->
+<h1 class="faq-page">Does MediCtrl provide a second opinion for any disease?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>Yes, you can avail second medical opinion by specialized doctors for all diseases. Our doctor tracks your 
+                  pathology reports, your post-operative report, your discharge summary, and guides you with the required/ new 
+                  treatment course ahead.</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-two">
+            <!-- faq question -->
+            <h1 class="faq-page">What MediCtrl provide insurance coverage for all surgeries?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>MediCtrl assists you in getting the insurance approval done within 30 minutes.. 
+                  Your insurance coverage depends on the health insurance type (personal, corporate) and the terms and 
+                  conditions set by the insurance provider.</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-two">
+            <!-- faq question -->
+            <h1 class="faq-page">What MediCtrl have its own Hospitals?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>MediCtrl does have its own hospital and MediCtrl also works in association with other hospitals to provide 
+                  medical facility by hospital and non medical facility by MediCtrl.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="footer">
+  <br>
+  <div class="namemail">
+    <a href="tel:+4733378901">+91 9871093589</a>
+    <a href="mailto:someone@example.com">info@medictrl.com</a>
+  </div>
+  {% comment %} l {% endcomment %}
+  <div class="social">
+    <h1>Social Share</h1>
+  </div>
+  <div class="fonts" data-aos="fade-up">
+    <a href="https://www.linkedin.com/company/medictrl/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/MediCtrl"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/medictrl_/"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <div class="links">
+    <a href="{% url 'app1:indexurls' %}">Home</a>
+    <a href="###">About</a>
+    <a href="#services">Services</a>
+    <a href="#Hospitals">Hospitals</a>
+    <a href="###">Contact</a>
+  </div>
+  <div class="links2">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWs_hKSXl7z0VWGp89J-Dw3nb0uoG0V7Synxz1hYRlSESF3w/viewform">Partner</a>
+    <a href="###">Investor</a>
+    <a href="###">FAQ</a>
+    <a href="https://angel.co/company/medictrl/jobs">Careers</a>
+  </div>
+  <div class="disclaimer"><br>
+    <div class="copyright">
+      <p>© 2022-2023 Carpediem Health Experts Private Limited. All rights reserved.</p>
+    </div>
+    <div class="policy">
+      <a href="{% url 'app1:policyurls' %}">Privacy policy</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="###">Terms and conditions</a>
+    </div>
+  </div>
+</div>
+
+{% comment %} ##4883B0 {% endcomment %}
+
+
+
+
+
+
+
+<script>
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+{% endblock content %}
+{% endblock body %}
+
